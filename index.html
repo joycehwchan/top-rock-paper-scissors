@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>  
+    <link rel="reset" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="title">
+      <h1>ROCK PAPER SCISSORS</h1>
+    </div> -->
+    <div class="main">
+      <div class="player">
+        <div class="pick">
+          <h3>Pick a move:</h3>
+        </div>
+        <div class="playerMove">
+          <img src="images/rock.png" alt="rock" class="rock" name="move" />
+        </div>
+        <div class="playerMove">
+          <img src="images/paper.png" alt="paper" class="paper" name="move" />
+        </div>
+        <div class="playerMove">
+          <img src="images/scissors.png" alt="scissors" class="scissors" name="move" />
+        </div>
+      </div>
+      <div class="game">
+        <div class="gameTop">
+          <h2 class="top">Win 5 rounds!</h2>
+        </div>
+        <div class="gamePlay">
+          <div class="playerChoice">
+            <h4>Player:</h4>
+            <div id="playerSelect"></div>
+            <h3 id="playerThisRound"></h3>
+          </div>
+          <div class="computerChoice">
+            <h4>Computer:</h4>
+            <div id="computerSelect"></div>
+            <h3 id="computerThisRound"></h3>
+          </div>
+        </div>
+        <div class="gameBottom">
+          <div class="bottomText">
+            <div class="result">
+              <p class="resultP" id="playerWins"></p>
+              <p class="resultP" id="computerWins"></p>
+              <p class="resultP" id="ties"></p>
+            </div>
+            <div class="winner">
+              <p class="winnerDisplay"></p>
+            </div>
+            <p class="instruction">Are you ready?</p>
+          </div>
+          <div class="bottomButton">
+            <button class="start" onclick="showGameField()">Start Game</button>
+            <button class="reset" onclick="resetGame()">Play Again</button>
+          </div>
+        </div>
+      </div>
+      <div class="computer">
+        <div class="pick">
+          <h3>Computer's move:</h3>
+        </div>
+        <div class="computerrock">
+          <img src="images/rock.png" alt="rock" class="rock" />
+        </div>
+        <div class="computerpaper">
+          <img src="images/paper.png" alt="paper" class="paper" />
+        </div>
+        <div class="computerscissors">
+          <img src="images/scissors.png" alt="scissors" class="scissors" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
