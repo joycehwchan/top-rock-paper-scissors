@@ -2,18 +2,23 @@
 
 body {
     margin: 0;
-    /* padding: 4%; */
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
+    padding: 0;
     height: 100vh;
     width: 100vw;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    overflow: hidden;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-    overflow: hidden;
+  }
+  
+  .title{
+    margin-top: 40px;
+    text-transform: uppercase;
   }
   
   .main {
-    margin-top: 5%;
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -133,29 +138,28 @@ body {
   }
   
   button {
-    width: 200px;
-    height: 60px;
-    border-radius: 8px;
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 1px solid white;
     outline: none;
-    color: black;
+    border-radius: 8px;
+    border: 1px solid white;
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.4em 1.2em;
   }
   
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
   .start {
     display: auto;
   }
   
   .reset {
     display: none;
-  }
-  
-  button:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 1);
   }
   
   .playerMove:hover {
