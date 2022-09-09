@@ -1,185 +1,183 @@
 /* LAYOUT */
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    overflow: none;
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  overflow: none;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
   
-  .title{
-    margin-top: 40px;
-    text-transform: uppercase;
-  }
+.title{
+  margin-top: 40px;
+  text-transform: uppercase;
+}
   
-  .main {
-    margin-top: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-height: 80vh;
-    min-width: 50%;
-  }
+.main {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 80vh;
+  min-width: 50%;
+}
   
-  .player,
-  .computer {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1.2px solid white;
-    border-radius: 8px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    width: 20%;
-    gap: 4%;
-  }
+.player,
+.computer {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1.2px solid white;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 20%;
+  gap: 4%;
+}
   
-  .move {
-    display: flex;
-    justify-content: center;
-    transition: 200ms;
-  }
-  
-  .game {
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    min-width: 20px;
-    min-height: 80vh;
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-  
-  #playerThisRound,
-  #computerThisRound {
-    margin: 4px;
-  }
-  
-  .gameTop {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1.2px solid white;
-    border-radius: 8px;
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .gamePlay {
-    display: none;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex: 2;
-    display: none;
-  }
-  
-  .playerChoice,
-  .computerChoice {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .gameBottom {
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    min-height: 160px;
-    padding-bottom: 20px;
-    flex: 1;
-  }
-  
-  .result {
-    display: none;
-    flex-direction: column;
-  }
-  
-  img {
-    max-width: 50%;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-  
-  h4 {
-    font-size: 1.1rem;
-    font-weight: 300;
-  }
-  
-  p {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  
-  .resultP {
-    margin: 2px;
-  }
-  
-  button {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    outline: none;
-    border-radius: 8px;
-    border: 1px solid white;
-    transition: all 0.2s;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 0.4em 1.2em;
-  }
-  
-  button:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
+.move {
+  display: flex;
+  justify-content: center;
+  transition: 200ms;
+}
 
-  .start {
-    display: auto;
-  }
-  
-  .reset {
-    display: none;
-  }
-  
-  .playerMove:hover {
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 200ms;
-    ;
-  }
-  
-  .playerMove,
-  .computerrock,
-  .computerpaper,
-  .computerscissors {
-    border-radius: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  
+.game {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  min-width: 20px;
+  min-height: 80vh;
+  margin-left: 4%;
+  margin-right: 4%;
+}
 
+#playerThisRound,
+#computerThisRound {
+  margin: 4px;
+}
+
+.gameTop {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1.2px solid white;
+  border-radius: 8px;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gamePlay {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2;
+  display: none;
+}
+
+.playerChoice,
+.computerChoice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gameBottom {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 160px;
+  padding-bottom: 20px;
+  flex: 1;
+}
+
+.result {
+  display: none;
+  flex-direction: column;
+}
+
+img {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.resultP {
+  margin: 2px;
+}
+
+button {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid white;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.4em 1.2em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.start {
+  display: auto;
+}
+
+.reset {
+  display: none;
+}
+
+.playerMove:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 200ms;
+  ;
+}
+
+.playerMove,
+.computerrock,
+.computerpaper,
+.computerscissors {
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
 /* footer */
 footer {
@@ -192,6 +190,7 @@ footer a,
 footer a:visited {
   color: black;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 footer a:hover {
