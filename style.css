@@ -1,20 +1,22 @@
 /* LAYOUT */
 
-body {
+html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
   font-family: 'Quicksand', sans-serif;
-  text-align: center;
-  overflow: hidden;
-  background-color: #85FFBD;
-  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-  height: 100vh;
-  /* flex */
+}
+
+body {
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
+  overflow: auto;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  background-repeat: no-repeat;
 }
   
 .title{
@@ -24,7 +26,6 @@ body {
 
 .main {
   display: flex;
-  /* flex: 1; */
   flex-direction: column;
   align-items: center;
 }
@@ -43,28 +44,26 @@ body {
   border-radius: 8px;
   display: none;
   flex-direction: column;
+  flex-shrink: 2;
   align-items: center;
   justify-content: center;
-  color: black;
-  width: 20%;
-  gap: 4%;
+  gap: 2rem;
+  width: 28%;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  margin-left: 4%;
+  margin-right: 4%;
 }
   
 .move {
   display: flex;
   justify-content: center;
   transition: 200ms;
-}
-
-.game {
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-  min-width: 20px;
-  min-height: 80vh;
-  margin-left: 4%;
-  margin-right: 4%;
 }
 
 #playerThisRound,
@@ -86,7 +85,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex: 1;
+  flex-shrink: 0;
   display: none;
 }
 
@@ -98,17 +97,6 @@ body {
   align-items: center;
 }
 
-.gameBottom {
-  /* border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  min-height: 160px;
-  padding-bottom: 20px; */
-  flex: 1;
-}
-
 .result {
   display: none;
   flex-direction: column;
@@ -118,6 +106,10 @@ img {
   max-width: 50%;
 }
 
+.game img {
+  max-width: 75%;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -125,7 +117,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h3 {
@@ -177,7 +169,6 @@ button:hover {
   border-radius: 8px;
   cursor: pointer;
   transition: 200ms;
-  ;
 }
 
 .playerMove,
@@ -185,14 +176,14 @@ button:hover {
 .computerpaper,
 .computerscissors {
   border-radius: 8px;
-  padding-top: 8px;
+  padding-top: 12px;
   padding-bottom: 8px;
 }
 
 /* footer */
 footer {
   font-size: 0.8rem;
-  margin: 28px 0 12px;
+  padding: 28px 0 12px;
   text-decoration: none;
 }
 
