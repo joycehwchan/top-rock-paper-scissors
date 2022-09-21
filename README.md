@@ -1,8 +1,7 @@
 # Rock Paper Scissors
 
 A simple rock-paper-scissors game created with HTML, CSS and JavaScript. 
-
-Live Demo 👉 *[Rock Paper Scissors](http://joycehwchan.github.io/RockPaperScissors/)*
+Project for the Odin Project.
 
 ### What I learned
 * Write and use functions in JavaScript
