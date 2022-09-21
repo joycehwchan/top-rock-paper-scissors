@@ -8,5 +8,5 @@ Live Demo 👉 *[Rock Paper Scissors](http://joycehwchan.github.io/RockPaperScis
 * Write and use functions in JavaScript
 * Create responsive layout with flexbox
 * Understand basics of DOM manipulation
-* Use Math.random() and switch statements
-* Change style temporarily using setTimeout()
+* Use `Math.random()` and switch statements
+* Change style temporarily using `setTimeout()`
