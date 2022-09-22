@@ -1,6 +1,7 @@
 # Rock Paper Scissors
 
 A simple rock-paper-scissors game created with HTML, CSS and JavaScript. 
+
 Project for the Odin Project.
 
 ### What I learned
