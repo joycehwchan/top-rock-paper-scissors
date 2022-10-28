@@ -18,7 +18,7 @@ body {
   background-image: linear-gradient(45deg, #9796f0 0%, #fbc7d4 100%);
   background-repeat: no-repeat;
 }
-  
+
 .title{
   margin-top: 20px;
   text-transform: uppercase;
@@ -29,14 +29,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
-  
+
 .match {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 34rem;
 }
-  
+
 .player,
 .computer {
   background-color: rgba(255, 255, 255, 0.5);
@@ -49,6 +49,7 @@ body {
   justify-content: center;
   gap: 2rem;
   width: 28%;
+  height: fit-content;
 }
 
 .game {
@@ -59,7 +60,7 @@ body {
   margin-left: 4%;
   margin-right: 4%;
 }
-  
+
 .move {
   display: flex;
   justify-content: center;
